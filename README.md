@@ -1,20 +1,24 @@
-# Hierarchical VNF Coordination
+# Hierarchical Network and Service Coordination
 
-This is the implementation code for the masters thesis "Hierarchical Coordination of Virtual Network Function Chains".
-The usual way to solve your model is by using a gml description of your network and then using the described gml api.
+An approach for hierarchical network and service coordination. Combines the best of two worlds: High solution quality, typically known from centralized approaches, and fast execution, known from distributed approaches. By splitting the network into hierarchies and domains, coordination can be parallelized but is still coordinated between domains.
 
----
+This repository contains the MILP implementation using Gurobi as well as auxiliary tools.
+
 ## Setup
+
+Requires Python 3.6+ and Gurobi. Dependencies can be installed with
+
 ```python
 python setup.py install
 ```
 
-## Using the full stack
-Please note that for using the optimization system, it is required to have gurobi at version 8.11 installed on your system.
+## Usage
+
+Please note that for using the optimization system, it is required to have Gurobi at version 8.11 installed on your system.
 Please refer to the official documentation for instructions.
 
 If you have defined your VNF chains, described your VNFs, defined a hierarchy for a network 
-and defined a set of VNF requests, you can call the gml api to solve your problem hierarchically
+and defined a set of VNF requests, you can call the GML API to solve your problem hierarchically
 
 ```
 import hvc.api.graph_ml as gml
@@ -33,7 +37,7 @@ hierarchically solve the problems in a top-down manner.
 
 The `method` parameter specifies which method of path generation should be used. Three values are possible, "full_expansion", "one_path" or "two_paths. Using "one_path", for example, results in a faster optimization problem but allows less requests to be placed.
 
-The `output_path` parameter specifies where the api will dump its intermediate problem inputs and outputs.
+The `output_path` parameter specifies where the API will dump its intermediate problem inputs and outputs.
 Such a folder always looks like this,
 
 
@@ -65,7 +69,7 @@ Such a folder always looks like this,
 
 The folders of the child coordinators, thereby, look exactly like the folder above (excluding the `fullgraph.dot` file).
 
-As it is complicated to read the final solution of the hierarchical VNF chaining problem from the MILP output, the api will conveniently create a folder under the specified `solution_path`.
+As it is complicated to read the final solution of the hierarchical VNF chaining problem from the MILP output, the API will conveniently create a folder under the specified `solution_path`.
     
     .
     ├── ending_times.yaml         # Ending timestamp of each coordinator
@@ -146,7 +150,7 @@ vnfs:
   - A
   - B
   - DST
- ```
+```
  The fields are pretty much self-explanatory. Please do not use non-linear functions as they will result in Gurobi errors or live-locks during the result-interpreting phase (refer to Section 3.4 such functions cannot be inverted using the described trick).
 
 ### Using a different graph
@@ -162,8 +166,15 @@ Additionally, if you want to cluster your graph using the k-Means api, your node
 ### Understanding the networks
 It is in some cases interesting to see how exactly the advertised paths look like, which nodes are border nodes, etc. To this end, each hierarchy describes it used extended coordinator network in a file called `graph.dot` using the DOT graph description language. Please refer to the official graphviz documentation to see how such files can be converted into PNGs.
 
-## Using single parts of the implementation
+## Development
 If you want to use the MILP implementation independently of the path generation, please refer to the `gurobipy_mip` interface.
 Two methods are convenient: `get_model` will generate the model and return it such that additional restrictions can be added by the user and `solve_model` will solve the model.
 
 Please refer to the `gurobipy_test.py` to see example inputs to these methods.
+
+## Contributors
+
+* Development: [@mirkojuergens](https://github.com/mirkojuergens)
+* Advisor: [@stefanbschneider](https://github.com/stefanbschneider)
+
+Please use GitHub's issue system to file bugs or ask questions.
