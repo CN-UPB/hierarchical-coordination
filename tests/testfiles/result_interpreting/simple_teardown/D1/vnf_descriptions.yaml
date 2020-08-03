@@ -1,0 +1,9 @@
+cpu_consumption:
+  DST: 'lambda in_rate: 0'
+  SRC: 'lambda in_rate: 0'
+outgoing_rate:
+  DST: 'lambda in_rate: in_rate'
+  SRC: 'lambda in_rate: in_rate'
+vnfs:
+- SRC
+- DST

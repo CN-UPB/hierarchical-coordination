@@ -1,0 +1,27 @@
+rootCoordinator:
+  childCoordinators:
+    coordinator4:
+      childCoordinators:
+        coordinator0:
+          nodes:
+          - N4
+          - N5
+          - N6
+        coordinator1:
+          nodes:
+          - N1
+          - N7
+          - N9
+          - N10
+          - N12
+        coordinator3:
+          nodes:
+          - N2
+          - N3
+          - N8
+          - N15
+    coordinator5:
+        nodes:
+        - N11
+        - N13
+        - N14

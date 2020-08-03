@@ -1,0 +1,36 @@
+domain_nodes:
+  v1:
+    - v1
+  v2:
+    - v2
+  v3:
+    - v3
+  v4:
+    - v4
+inter_domain_edges:
+  d1e1:
+    src: v1
+    dst: v2
+    delay: 5
+    max_rate: 4
+  d1e2:
+    src: v1
+    dst: v4
+    delay: 5
+    max_rate: 2
+  d1e3:
+    src: v2
+    dst: v4
+    delay: 5
+    max_rate: 4
+  d1e4:
+    src: v1
+    dst: v3
+    delay: 5
+    max_rate: 4
+  d1e5:
+    src: v3
+    dst: v4
+    delay: 5
+    max_rate: 2
+intra_domain_paths:

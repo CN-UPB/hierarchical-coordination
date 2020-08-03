@@ -1,0 +1,24 @@
+rootCoordinator:
+  childCoordinators:
+    childCoordinator1:
+        nodes:
+          - 'N11'
+          - 'N14'
+          - 'N13'
+          - 'N7'
+          - 'N1'
+          - 'N6'
+    childCoordinator2:
+        nodes:
+          - 'N10'
+          - 'N12'
+          - 'N9'
+          - 'N15'
+          - 'N8'
+    childCoordinator3:
+        nodes:
+          - 'N2'
+          - 'N4'
+          - 'N5'
+          - 'N4'
+          - 'N3'

@@ -1,0 +1,101 @@
+domain_nodes:
+  N15:
+  - N15
+  - N15-temp
+  N2:
+  - N2
+  - N2-temp
+  N3:
+  - N3
+  - N3-temp
+  N8:
+  - N8
+  - N8-temp
+inter_domain_edges:
+  edge_14:
+    delay: 2
+    dst: N8
+    max_rate: 10
+    src: N3
+  edge_15:
+    delay: 2
+    dst: N3
+    max_rate: 10
+    src: N8
+  edge_28:
+    delay: 7
+    dst: N15
+    max_rate: 13
+    src: N8
+  edge_29:
+    delay: 7
+    dst: N8
+    max_rate: 13
+    src: N15
+  edge_6:
+    delay: 4
+    dst: N3
+    max_rate: 10
+    src: N2
+  edge_7:
+    delay: 4
+    dst: N2
+    max_rate: 10
+    src: N3
+intra_domain_paths:
+  pathN15-temp:
+    cpu: 5
+    delay: 0
+    domain: N15
+    dst: N15-temp
+    max_rate: 1000000
+    src: N15
+  pathN15-temp-bw:
+    cpu: 0
+    delay: 0
+    domain: N15
+    dst: N15
+    max_rate: 1000000
+    src: N15-temp
+  pathN2-temp:
+    cpu: 15
+    delay: 0
+    domain: N2
+    dst: N2-temp
+    max_rate: 1000000
+    src: N2
+  pathN2-temp-bw:
+    cpu: 0
+    delay: 0
+    domain: N2
+    dst: N2
+    max_rate: 1000000
+    src: N2-temp
+  pathN3-temp:
+    cpu: 15
+    delay: 0
+    domain: N3
+    dst: N3-temp
+    max_rate: 1000000
+    src: N3
+  pathN3-temp-bw:
+    cpu: 0
+    delay: 0
+    domain: N3
+    dst: N3
+    max_rate: 1000000
+    src: N3-temp
+  pathN8-temp:
+    cpu: 16
+    delay: 0
+    domain: N8
+    dst: N8-temp
+    max_rate: 1000000
+    src: N8
+  pathN8-temp-bw:
+    cpu: 0
+    delay: 0
+    domain: N8
+    dst: N8
+    max_rate: 1000000
+    src: N8-temp

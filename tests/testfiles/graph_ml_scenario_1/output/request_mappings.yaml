@@ -1,0 +1,11 @@
+coordinator4:
+  request1-request1: !!python/tuple
+  - SRC
+  - B
+  request2-request0: !!python/tuple
+  - SRC
+  - DST
+coordinator5:
+  request1-request0: !!python/tuple
+  - A
+  - DST

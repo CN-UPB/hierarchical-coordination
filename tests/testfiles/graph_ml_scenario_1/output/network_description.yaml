@@ -1,0 +1,243 @@
+domain_nodes:
+  coordinator4:
+  - N1
+  - N7
+  - N12
+  - N5
+  - N6
+  coordinator5:
+  - N11
+  - N14
+  - N13
+inter_domain_edges:
+  edge_20:
+    delay: 5
+    dst: N13
+    max_rate: 7
+    src: N6
+  edge_21:
+    delay: 5
+    dst: N6
+    max_rate: 7
+    src: N13
+  edge_24:
+    delay: 5
+    dst: N14
+    max_rate: 9
+    src: N7
+  edge_25:
+    delay: 5
+    dst: N7
+    max_rate: 9
+    src: N14
+intra_domain_paths:
+  path_58:
+    cpu: 40
+    delay: 16
+    domain: coordinator4
+    dst: N12
+    max_rate: 5
+    src: N1
+  path_59:
+    cpu: 40
+    delay: 16
+    domain: coordinator4
+    dst: N1
+    max_rate: 5
+    src: N12
+  path_60:
+    cpu: 19
+    delay: 19
+    domain: coordinator4
+    dst: N12
+    max_rate: 11
+    src: N1
+  path_61:
+    cpu: 19
+    delay: 19
+    domain: coordinator4
+    dst: N1
+    max_rate: 11
+    src: N12
+  path_62:
+    cpu: 69
+    delay: 33
+    domain: coordinator4
+    dst: N12
+    max_rate: 4
+    src: N1
+  path_63:
+    cpu: 69
+    delay: 33
+    domain: coordinator4
+    dst: N1
+    max_rate: 4
+    src: N12
+  path_64:
+    cpu: 21
+    delay: 11
+    domain: coordinator4
+    dst: N6
+    max_rate: 10
+    src: N5
+  path_65:
+    cpu: 21
+    delay: 11
+    domain: coordinator4
+    dst: N5
+    max_rate: 10
+    src: N6
+  path_66:
+    cpu: 0
+    delay: 5
+    domain: coordinator4
+    dst: N6
+    max_rate: 10
+    src: N1
+  path_67:
+    cpu: 0
+    delay: 5
+    domain: coordinator4
+    dst: N1
+    max_rate: 10
+    src: N6
+  path_68:
+    cpu: 26
+    delay: 4
+    domain: coordinator4
+    dst: N7
+    max_rate: 5
+    src: N1
+  path_69:
+    cpu: 26
+    delay: 4
+    domain: coordinator4
+    dst: N1
+    max_rate: 5
+    src: N7
+  path_70:
+    cpu: 0
+    delay: 9
+    domain: coordinator4
+    dst: N6
+    max_rate: 6
+    src: N5
+  path_71:
+    cpu: 0
+    delay: 9
+    domain: coordinator4
+    dst: N5
+    max_rate: 6
+    src: N6
+  path_72:
+    cpu: 39
+    delay: 21
+    domain: coordinator4
+    dst: N7
+    max_rate: 12
+    src: N1
+  path_73:
+    cpu: 39
+    delay: 21
+    domain: coordinator4
+    dst: N1
+    max_rate: 12
+    src: N7
+  path_74:
+    cpu: 30
+    delay: 12
+    domain: coordinator4
+    dst: N7
+    max_rate: 12
+    src: N12
+  path_75:
+    cpu: 30
+    delay: 12
+    domain: coordinator4
+    dst: N12
+    max_rate: 12
+    src: N7
+  path_76:
+    cpu: 40
+    delay: 21
+    domain: coordinator4
+    dst: N6
+    max_rate: 5
+    src: N12
+  path_77:
+    cpu: 40
+    delay: 21
+    domain: coordinator4
+    dst: N12
+    max_rate: 5
+    src: N6
+  path_78:
+    cpu: 68
+    delay: 27
+    domain: coordinator4
+    dst: N6
+    max_rate: 5
+    src: N12
+  path_79:
+    cpu: 68
+    delay: 27
+    domain: coordinator4
+    dst: N12
+    max_rate: 5
+    src: N6
+  path_80:
+    cpu: 45
+    delay: 23
+    domain: coordinator4
+    dst: N7
+    max_rate: 5
+    src: N12
+  path_81:
+    cpu: 45
+    delay: 23
+    domain: coordinator4
+    dst: N12
+    max_rate: 5
+    src: N7
+  path_82:
+    cpu: 71
+    delay: 36
+    domain: coordinator4
+    dst: N6
+    max_rate: 1
+    src: N12
+  path_83:
+    cpu: 71
+    delay: 36
+    domain: coordinator4
+    dst: N12
+    max_rate: 1
+    src: N6
+  path_84:
+    cpu: 9
+    delay: 7
+    domain: coordinator5
+    dst: N14
+    max_rate: 6
+    src: N11
+  path_85:
+    cpu: 9
+    delay: 7
+    domain: coordinator5
+    dst: N11
+    max_rate: 6
+    src: N14
+  path_86:
+    cpu: 9
+    delay: 9
+    domain: coordinator5
+    dst: N13
+    max_rate: 13
+    src: N11
+  path_87:
+    cpu: 9
+    delay: 9
+    domain: coordinator5
+    dst: N11
+    max_rate: 13
+    src: N13

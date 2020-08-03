@@ -1,0 +1,11 @@
+request1:
+  egress: N11
+  ingress: N5
+  initial_rate: 2
+  vnf_chain: chain1
+request2:
+  egress: N12
+  ingress: N1
+  initial_rate: 5
+  vnf_chain: chain1
+

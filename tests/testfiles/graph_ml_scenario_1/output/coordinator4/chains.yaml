@@ -1,0 +1,17 @@
+chain_0:
+- !!python/tuple
+  - SRC
+  - A
+- !!python/tuple
+  - A
+  - B
+- !!python/tuple
+  - B
+  - DST
+chain_1:
+- !!python/tuple
+  - SRC
+  - A
+- !!python/tuple
+  - A
+  - DST

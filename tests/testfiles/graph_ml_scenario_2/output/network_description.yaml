@@ -1,0 +1,290 @@
+domain_nodes:
+  childCoordinator1:
+  - N7
+  - N11
+  - N1
+  - N6
+  childCoordinator2:
+  - N10
+  - N8
+  childCoordinator3:
+  - N5
+  - N2
+  - N3
+  - N4
+inter_domain_edges:
+  edge_10:
+    delay: 3
+    dst: N6
+    max_rate: 19
+    src: N2
+  edge_11:
+    delay: 3
+    dst: N2
+    max_rate: 19
+    src: N6
+  edge_14:
+    delay: 8
+    dst: N8
+    max_rate: 19
+    src: N3
+  edge_15:
+    delay: 8
+    dst: N3
+    max_rate: 19
+    src: N8
+  edge_18:
+    delay: 8
+    dst: N6
+    max_rate: 10
+    src: N4
+  edge_19:
+    delay: 8
+    dst: N4
+    max_rate: 10
+    src: N6
+  edge_22:
+    delay: 7
+    dst: N10
+    max_rate: 17
+    src: N7
+  edge_23:
+    delay: 7
+    dst: N7
+    max_rate: 17
+    src: N10
+  edge_4:
+    delay: 5
+    dst: N8
+    max_rate: 9
+    src: N1
+  edge_5:
+    delay: 5
+    dst: N1
+    max_rate: 9
+    src: N8
+intra_domain_paths:
+  path_0:
+    cpu: 30
+    delay: 17
+    domain: childCoordinator1
+    dst: N7
+    max_rate: 11
+    src: N11
+  path_1:
+    cpu: 30
+    delay: 17
+    domain: childCoordinator1
+    dst: N11
+    max_rate: 11
+    src: N7
+  path_10:
+    cpu: 35
+    delay: 23
+    domain: childCoordinator1
+    dst: N6
+    max_rate: 11
+    src: N7
+  path_11:
+    cpu: 35
+    delay: 23
+    domain: childCoordinator1
+    dst: N7
+    max_rate: 11
+    src: N6
+  path_12:
+    cpu: 21
+    delay: 12
+    domain: childCoordinator2
+    dst: N8
+    max_rate: 6
+    src: N10
+  path_13:
+    cpu: 21
+    delay: 12
+    domain: childCoordinator2
+    dst: N10
+    max_rate: 6
+    src: N8
+  path_14:
+    cpu: 35
+    delay: 15
+    domain: childCoordinator2
+    dst: N8
+    max_rate: 7
+    src: N10
+  path_15:
+    cpu: 35
+    delay: 15
+    domain: childCoordinator2
+    dst: N10
+    max_rate: 7
+    src: N8
+  path_16:
+    cpu: 38
+    delay: 15
+    domain: childCoordinator2
+    dst: N8
+    max_rate: 6
+    src: N10
+  path_17:
+    cpu: 38
+    delay: 15
+    domain: childCoordinator2
+    dst: N10
+    max_rate: 6
+    src: N8
+  path_2:
+    cpu: 41
+    delay: 21
+    domain: childCoordinator1
+    dst: N1
+    max_rate: 10
+    src: N11
+  path_3:
+    cpu: 41
+    delay: 21
+    domain: childCoordinator1
+    dst: N11
+    max_rate: 10
+    src: N1
+  path_30:
+    cpu: 17
+    delay: 2
+    domain: childCoordinator3
+    dst: N2
+    max_rate: 17
+    src: N5
+  path_31:
+    cpu: 17
+    delay: 2
+    domain: childCoordinator3
+    dst: N5
+    max_rate: 17
+    src: N2
+  path_32:
+    cpu: 10
+    delay: 6
+    domain: childCoordinator3
+    dst: N4
+    max_rate: 18
+    src: N5
+  path_33:
+    cpu: 10
+    delay: 6
+    domain: childCoordinator3
+    dst: N5
+    max_rate: 18
+    src: N4
+  path_34:
+    cpu: 29
+    delay: 8
+    domain: childCoordinator3
+    dst: N2
+    max_rate: 8
+    src: N5
+  path_35:
+    cpu: 29
+    delay: 8
+    domain: childCoordinator3
+    dst: N5
+    max_rate: 8
+    src: N2
+  path_36:
+    cpu: 13
+    delay: 6
+    domain: childCoordinator3
+    dst: N3
+    max_rate: 17
+    src: N5
+  path_37:
+    cpu: 13
+    delay: 6
+    domain: childCoordinator3
+    dst: N5
+    max_rate: 17
+    src: N3
+  path_38:
+    cpu: 29
+    delay: 4
+    domain: childCoordinator3
+    dst: N3
+    max_rate: 8
+    src: N5
+  path_39:
+    cpu: 29
+    delay: 4
+    domain: childCoordinator3
+    dst: N5
+    max_rate: 8
+    src: N3
+  path_4:
+    cpu: 37
+    delay: 17
+    domain: childCoordinator1
+    dst: N6
+    max_rate: 16
+    src: N11
+  path_40:
+    cpu: 28
+    delay: 2
+    domain: childCoordinator3
+    dst: N3
+    max_rate: 8
+    src: N2
+  path_41:
+    cpu: 28
+    delay: 2
+    domain: childCoordinator3
+    dst: N2
+    max_rate: 8
+    src: N3
+  path_42:
+    cpu: 29
+    delay: 8
+    domain: childCoordinator3
+    dst: N3
+    max_rate: 17
+    src: N2
+  path_43:
+    cpu: 29
+    delay: 8
+    domain: childCoordinator3
+    dst: N2
+    max_rate: 17
+    src: N3
+  path_5:
+    cpu: 37
+    delay: 17
+    domain: childCoordinator1
+    dst: N11
+    max_rate: 16
+    src: N6
+  path_6:
+    cpu: 37
+    delay: 26
+    domain: childCoordinator1
+    dst: N6
+    max_rate: 8
+    src: N11
+  path_7:
+    cpu: 37
+    delay: 26
+    domain: childCoordinator1
+    dst: N11
+    max_rate: 8
+    src: N6
+  path_8:
+    cpu: 7
+    delay: 4
+    domain: childCoordinator1
+    dst: N6
+    max_rate: 10
+    src: N1
+  path_9:
+    cpu: 7
+    delay: 4
+    domain: childCoordinator1
+    dst: N1
+    max_rate: 10
+    src: N6

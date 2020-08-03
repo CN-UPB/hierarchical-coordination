@@ -1,0 +1,148 @@
+domain_nodes:
+  N10:
+  - N10
+  - N10-temp
+  N12:
+  - N12
+  - N12-temp
+  N15:
+  - N15
+  - N15-temp
+  N8:
+  - N8
+  - N8-temp
+  N9:
+  - N9
+  - N9-temp
+inter_domain_edges:
+  edge_26:
+    delay: 5
+    dst: N9
+    max_rate: 6
+    src: N8
+  edge_27:
+    delay: 5
+    dst: N8
+    max_rate: 6
+    src: N9
+  edge_28:
+    delay: 4
+    dst: N15
+    max_rate: 14
+    src: N8
+  edge_29:
+    delay: 4
+    dst: N8
+    max_rate: 14
+    src: N15
+  edge_30:
+    delay: 7
+    dst: N10
+    max_rate: 13
+    src: N9
+  edge_31:
+    delay: 7
+    dst: N9
+    max_rate: 13
+    src: N10
+  edge_32:
+    delay: 4
+    dst: N12
+    max_rate: 10
+    src: N9
+  edge_33:
+    delay: 4
+    dst: N9
+    max_rate: 10
+    src: N12
+  edge_34:
+    delay: 4
+    dst: N15
+    max_rate: 13
+    src: N9
+  edge_35:
+    delay: 4
+    dst: N9
+    max_rate: 13
+    src: N15
+  edge_36:
+    delay: 3
+    dst: N12
+    max_rate: 14
+    src: N10
+  edge_37:
+    delay: 3
+    dst: N10
+    max_rate: 14
+    src: N12
+intra_domain_paths:
+  pathN10-temp:
+    cpu: 2
+    delay: 0
+    domain: N10
+    dst: N10-temp
+    max_rate: 1000000
+    src: N10
+  pathN10-temp-bw:
+    cpu: 0
+    delay: 0
+    domain: N10
+    dst: N10
+    max_rate: 1000000
+    src: N10-temp
+  pathN12-temp:
+    cpu: 3
+    delay: 0
+    domain: N12
+    dst: N12-temp
+    max_rate: 1000000
+    src: N12
+  pathN12-temp-bw:
+    cpu: 0
+    delay: 0
+    domain: N12
+    dst: N12
+    max_rate: 1000000
+    src: N12-temp
+  pathN15-temp:
+    cpu: 14
+    delay: 0
+    domain: N15
+    dst: N15-temp
+    max_rate: 1000000
+    src: N15
+  pathN15-temp-bw:
+    cpu: 0
+    delay: 0
+    domain: N15
+    dst: N15
+    max_rate: 1000000
+    src: N15-temp
+  pathN8-temp:
+    cpu: 1
+    delay: 0
+    domain: N8
+    dst: N8-temp
+    max_rate: 1000000
+    src: N8
+  pathN8-temp-bw:
+    cpu: 0
+    delay: 0
+    domain: N8
+    dst: N8
+    max_rate: 1000000
+    src: N8-temp
+  pathN9-temp:
+    cpu: 18
+    delay: 0
+    domain: N9
+    dst: N9-temp
+    max_rate: 1000000
+    src: N9
+  pathN9-temp-bw:
+    cpu: 0
+    delay: 0
+    domain: N9
+    dst: N9
+    max_rate: 1000000
+    src: N9-temp

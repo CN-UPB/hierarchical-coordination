@@ -1,0 +1,7 @@
+request1-request0:
+  egress: N11
+  egress_domain: N11
+  ingress: N13
+  ingress_domain: N13
+  initial_rate: 3.0
+  vnf_chain: chain_0

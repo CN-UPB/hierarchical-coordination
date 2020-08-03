@@ -1,0 +1,14 @@
+request1-request1:
+  egress: N6
+  egress_domain: coordinator0
+  ingress: N5
+  ingress_domain: coordinator0
+  initial_rate: 2.0
+  vnf_chain: chain_1
+request2-request0:
+  egress: N12
+  egress_domain: coordinator1
+  ingress: N1
+  ingress_domain: coordinator1
+  initial_rate: 5.0
+  vnf_chain: chain_0

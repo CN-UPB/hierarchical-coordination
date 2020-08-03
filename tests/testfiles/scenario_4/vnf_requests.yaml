@@ -1,0 +1,8 @@
+request1:
+  egress: v6
+  egress_domain: D2
+  ingress: v1
+  ingress_domain: D1
+  initial_rate: 5
+  max_delay: 30
+  vnf_chain: chain1

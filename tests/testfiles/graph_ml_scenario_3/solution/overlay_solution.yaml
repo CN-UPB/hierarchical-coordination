@@ -1,0 +1,15 @@
+gamma[A, pathN12-temp]: 1.0
+gamma[A, pathN5-temp]: 1.0
+gamma[B, pathN12-temp]: 1.0
+gamma[B, pathN5-temp]: 1.0
+gamma[DST, egress_N11]: 1.0
+gamma[DST, egress_N12]: 1.0
+gamma[SRC, ingress_N1]: 1.0
+gamma[SRC, ingress_N5]: 1.0
+lambda_inter[(B_request1,DST_request1), pathN5-temp, egress_N11, edge_17]: 3.9000000000000004
+lambda_inter[(B_request1,DST_request1), pathN5-temp, egress_N11, edge_18]: 3.9000000000000004
+lambda_inter[(B_request1,DST_request1), pathN5-temp, egress_N11, edge_20]: 3.9000000000000004
+lambda_inter[(B_request1,DST_request1), pathN5-temp, egress_N11, edge_39]: 3.9000000000000004
+lambda_inter[(SRC_request2,A_request2), ingress_N1, pathN12-temp, edge_22]: 5.0
+lambda_inter[(SRC_request2,A_request2), ingress_N1, pathN12-temp, edge_2]: 5.0
+lambda_inter[(SRC_request2,A_request2), ingress_N1, pathN12-temp, edge_36]: 5.0

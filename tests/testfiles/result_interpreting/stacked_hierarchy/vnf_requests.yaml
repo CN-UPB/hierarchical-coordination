@@ -1,0 +1,21 @@
+request1:
+  egress: v1
+  egress_domain: D1
+  ingress: v13
+  ingress_domain: D3
+  initial_rate: 4
+  vnf_chain: chain1
+request2:
+  egress: v2
+  egress_domain: D1
+  ingress: v6
+  ingress_domain: D2
+  initial_rate: 4
+  vnf_chain: chain2
+request3:
+  egress: v13
+  egress_domain: D3
+  ingress: v7
+  ingress_domain: D2
+  initial_rate: 15
+  vnf_chain: chain2

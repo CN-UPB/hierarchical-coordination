@@ -1,0 +1,204 @@
+cpu_restrictions:
+  cpu_restriction_coordinator0_0:
+    domain: coordinator4
+    paths:
+    - path_83
+    - path_82
+    - path_65
+    - path_64
+    shared_cpu: 21
+  cpu_restriction_coordinator1_0:
+    domain: coordinator4
+    paths:
+    - path_69
+    - path_58
+    - path_59
+    - path_80
+    - path_68
+    - path_77
+    - path_78
+    - path_76
+    - path_79
+    - path_81
+    shared_cpu: 10
+  cpu_restriction_coordinator1_1:
+    domain: coordinator4
+    paths:
+    - path_69
+    - path_58
+    - path_59
+    - path_62
+    - path_72
+    - path_74
+    - path_80
+    - path_63
+    - path_73
+    - path_78
+    - path_77
+    - path_76
+    - path_68
+    - path_79
+    - path_75
+    - path_81
+    shared_cpu: 16
+  cpu_restriction_coordinator1_2:
+    domain: coordinator4
+    paths:
+    - path_58
+    - path_59
+    - path_62
+    - path_72
+    - path_74
+    - path_63
+    - path_73
+    - path_78
+    - path_77
+    - path_76
+    - path_79
+    - path_75
+    shared_cpu: 9
+  cpu_restriction_coordinator1_3:
+    domain: coordinator4
+    paths:
+    - path_83
+    - path_58
+    - path_59
+    - path_62
+    - path_80
+    - path_74
+    - path_79
+    - path_63
+    - path_77
+    - path_78
+    - path_82
+    - path_76
+    - path_61
+    - path_60
+    - path_75
+    - path_81
+    shared_cpu: 5
+  cpu_restriction_coordinator1_4:
+    domain: coordinator4
+    paths:
+    - path_83
+    - path_62
+    - path_80
+    - path_72
+    - path_79
+    - path_63
+    - path_73
+    - path_78
+    - path_82
+    - path_61
+    - path_60
+    - path_81
+    shared_cpu: 14
+  cpu_restriction_coordinator3_0:
+    domain: coordinator4
+    paths:
+    - path_83
+    - path_82
+    shared_cpu: 31
+  cpu_restriction_coordinator5_0:
+    domain: coordinator5
+    paths:
+    - path_84
+    - path_86
+    - path_87
+    - path_85
+    shared_cpu: 3
+  cpu_restriction_coordinator5_1:
+    domain: coordinator5
+    paths:
+    - path_84
+    - path_85
+    shared_cpu: 6
+  cpu_restriction_coordinator5_2:
+    domain: coordinator5
+    paths:
+    - path_87
+    - path_86
+    shared_cpu: 6
+routing_restrictions:
+  routing_restriction_coordinator0_0:
+    domain: coordinator4
+    paths:
+    - path_82
+    - path_64
+    shared_bottleneck: 10
+  routing_restriction_coordinator0_1:
+    domain: coordinator4
+    paths:
+    - path_83
+    - path_65
+    shared_bottleneck: 10
+  routing_restriction_coordinator1_0:
+    domain: coordinator4
+    paths:
+    - path_58
+    - path_80
+    - path_68
+    - path_77
+    - path_79
+    shared_bottleneck: 5
+  routing_restriction_coordinator1_1:
+    domain: coordinator4
+    paths:
+    - path_69
+    - path_59
+    - path_78
+    - path_76
+    - path_81
+    shared_bottleneck: 5
+  routing_restriction_coordinator1_2:
+    domain: coordinator4
+    paths:
+    - path_58
+    - path_62
+    - path_73
+    - path_63
+    - path_77
+    - path_79
+    - path_75
+    shared_bottleneck: 12
+  routing_restriction_coordinator1_3:
+    domain: coordinator4
+    paths:
+    - path_59
+    - path_62
+    - path_72
+    - path_74
+    - path_63
+    - path_78
+    - path_76
+    shared_bottleneck: 12
+  routing_restriction_coordinator1_4:
+    domain: coordinator4
+    paths:
+    - path_62
+    - path_58
+    - path_75
+    - path_77
+    shared_bottleneck: 12
+  routing_restriction_coordinator1_5:
+    domain: coordinator4
+    paths:
+    - path_74
+    - path_59
+    - path_76
+    - path_63
+    shared_bottleneck: 12
+  routing_restriction_coordinator1_6:
+    domain: coordinator4
+    paths:
+    - path_79
+    - path_63
+    - path_73
+    shared_bottleneck: 16
+  routing_restriction_coordinator1_7:
+    domain: coordinator4
+    paths:
+    - path_78
+    - path_72
+    - path_62
+    shared_bottleneck: 16

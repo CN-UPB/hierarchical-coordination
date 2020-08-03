@@ -1,0 +1,138 @@
+domain_nodes:
+  N1:
+  - N1
+  - N1-temp
+  N10:
+  - N10
+  - N10-temp
+  N12:
+  - N12
+  - N12-temp
+  N7:
+  - N7
+  - N7-temp
+  N9:
+  - N9
+  - N9-temp
+inter_domain_edges:
+  edge_2:
+    delay: 4
+    dst: N7
+    max_rate: 5
+    src: N1
+  edge_22:
+    delay: 8
+    dst: N10
+    max_rate: 12
+    src: N7
+  edge_23:
+    delay: 8
+    dst: N7
+    max_rate: 12
+    src: N10
+  edge_3:
+    delay: 4
+    dst: N1
+    max_rate: 5
+    src: N7
+  edge_30:
+    delay: 2
+    dst: N10
+    max_rate: 16
+    src: N9
+  edge_31:
+    delay: 2
+    dst: N9
+    max_rate: 16
+    src: N10
+  edge_32:
+    delay: 8
+    dst: N12
+    max_rate: 11
+    src: N9
+  edge_33:
+    delay: 8
+    dst: N9
+    max_rate: 11
+    src: N12
+  edge_36:
+    delay: 4
+    dst: N12
+    max_rate: 12
+    src: N10
+  edge_37:
+    delay: 4
+    dst: N10
+    max_rate: 12
+    src: N12
+intra_domain_paths:
+  pathN1-temp:
+    cpu: 10
+    delay: 0
+    domain: N1
+    dst: N1-temp
+    max_rate: 1000000
+    src: N1
+  pathN1-temp-bw:
+    cpu: 0
+    delay: 0
+    domain: N1
+    dst: N1
+    max_rate: 1000000
+    src: N1-temp
+  pathN10-temp:
+    cpu: 9
+    delay: 0
+    domain: N10
+    dst: N10-temp
+    max_rate: 1000000
+    src: N10
+  pathN10-temp-bw:
+    cpu: 0
+    delay: 0
+    domain: N10
+    dst: N10
+    max_rate: 1000000
+    src: N10-temp
+  pathN12-temp:
+    cpu: 5
+    delay: 0
+    domain: N12
+    dst: N12-temp
+    max_rate: 1000000
+    src: N12
+  pathN12-temp-bw:
+    cpu: 0
+    delay: 0
+    domain: N12
+    dst: N12
+    max_rate: 1000000
+    src: N12-temp
+  pathN7-temp:
+    cpu: 16
+    delay: 0
+    domain: N7
+    dst: N7-temp
+    max_rate: 1000000
+    src: N7
+  pathN7-temp-bw:
+    cpu: 0
+    delay: 0
+    domain: N7
+    dst: N7
+    max_rate: 1000000
+    src: N7-temp
+  pathN9-temp:
+    cpu: 14
+    delay: 0
+    domain: N9
+    dst: N9-temp
+    max_rate: 1000000
+    src: N9
+  pathN9-temp-bw:
+    cpu: 0
+    delay: 0
+    domain: N9
+    dst: N9
+    max_rate: 1000000
+    src: N9-temp

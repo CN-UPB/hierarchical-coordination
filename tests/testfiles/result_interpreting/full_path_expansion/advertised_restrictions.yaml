@@ -1,0 +1,252 @@
+cpu_restrictions:
+  cpu_d3_r1:
+    domain: D3
+    paths:
+      - p1
+      - p3
+      - p6
+    shared_cpu: 15
+  cpu_d3_r2:
+    domain: D3
+    paths:
+      - p1
+      - p2
+      - p3
+      - p5
+      - p6
+    shared_cpu: 5
+  cpu_d3_r3:
+    domain: D3
+    paths:
+      - p2
+      - p3
+      - p5
+      - p6
+    shared_cpu: 10
+  cpu_d3_r4:
+    domain: D3
+    paths:
+      - p2
+      - p3
+      - p4
+      - p5
+      - p6
+    shared_cpu: 15
+  cpu_d3_r5:
+    domain: D3
+    paths:
+      - p2
+      - p4
+      - p6
+    shared_cpu: 3
+  cpu_d1_r1:
+    domain: D1
+    paths:
+      - p8
+      - p10
+      - p11
+      - p12
+      - p13
+      - p14
+      - p15
+      - p17
+      - p18
+      - p19
+      - p20
+      - p21
+    shared_cpu: 20
+  cpu_d1_r2:
+    domain: D1
+    paths:
+      - p8
+      - p10
+      - p12
+      - p13
+      - p14
+      - p15
+      - p16
+      - p17
+      - p18
+      - p19
+      - p20
+    shared_cpu: 7
+  cpu_d1_r3:
+    domain: D1
+    paths:
+      - p7
+      - p8
+      - p10
+      - p14
+      - p17
+      - p19
+      - p20
+      - p21
+    shared_cpu: 10
+  cpu_d1_r4:
+    domain: D1
+    paths:
+      - p7
+      - p8
+      - p10
+      - p11
+      - p12
+      - p14
+      - p15
+      - p16
+      - p17
+      - p18
+      - p20
+      - p21
+    shared_cpu: 4
+  cpu_d2_r1:
+    domain: D2
+    paths:
+      - p22
+      - p23
+      - p25
+      - p26
+      - p27
+    shared_cpu: 10
+  cpu_d2_r2:
+    domain: D2
+    paths:
+      - p23
+      - p24
+      - p25
+      - p26
+      - p27
+    shared_cpu: 9
+  cpu_d2_r3:
+    domain: D2
+    paths:
+      - p24
+      - p25
+    shared_cpu: 20
+  cpu_d2_r4:
+    domain: D2
+    paths:
+      - p23
+      - p24
+      - p25
+      - p27
+    shared_cpu: 30
+  cpu_d2_r5:
+    domain: D2
+    paths:
+      - p22
+      - p23
+      - p25
+      - p27
+    shared_cpu: 10
+routing_restrictions:
+  routing_d3_r1:
+    domain: D3
+    paths:
+      - p1
+      - p3
+      - p6
+    shared_bottleneck: 10
+  routing_d3_r2:
+    domain: D3
+    paths:
+      - p2
+      - p3
+      - p5
+    shared_bottleneck: 9
+  routing_d3_r3:
+    domain: D3
+    paths:
+      - p2
+      - p4
+      - p6
+    shared_bottleneck: 20
+  routing_d3_r4:
+    domain: D3
+    paths:
+      - p3
+      - p4
+      - p5
+    shared_bottleneck: 20
+  routing_d1_r1:
+    domain: D1
+    paths:
+      - p8
+      - p10
+      - p13
+      - p17
+      - p18
+      - p19
+      - p21
+    shared_bottleneck: 4
+  routing_d1_r2:
+    domain: D1
+    paths:
+      - p11
+      - p15
+      - p18
+    shared_bottleneck: 2
+  routing_d1_r3:
+    domain: D1
+    paths:
+      - p8
+      - p10
+      - p14
+      - p15
+      - p16
+      - p20
+      - p21
+    shared_bottleneck: 4
+  routing_d1_r4:
+    domain: D1
+    paths:
+      - p8
+      - p9
+      - p12
+      - p14
+      - p17
+      - p19
+    shared_bottleneck: 2
+  routing_d1_r5:
+    domain: D1
+    paths:
+      - p7
+      - p10
+      - p12
+      - p14
+      - p17
+      - p20
+    shared_bottleneck: 4
+  routing_d2_r1:
+    domain: D2
+    paths:
+      - p23
+      - p25
+      - p26
+    shared_bottleneck: 5
+  routing_d2_r2:
+    domain: D2
+    paths:
+      - p23
+      - p24
+      - p27
+    shared_bottleneck: 10
+  routing_d2_r3:
+    domain: D2
+    paths:
+      - p23
+      - p25
+      - p27
+    shared_bottleneck: 20
+  routing_d2_r4:
+    domain: D2
+    paths:
+      - p22
+      - p25
+      - p27
+    shared_bottleneck: 20
+  routing_d2_r5:
+    domain: D2
+    paths:
+      - p24
+      - p25
+    shared_bottleneck: 15

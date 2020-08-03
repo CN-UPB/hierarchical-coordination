@@ -1,0 +1,26 @@
+cpu_restrictions:
+  cpu_r1:
+    domain: D1
+    paths:
+      - p1
+      - p2
+    shared_cpu: 10
+  cpu_r2:
+    domain: D2
+    paths:
+      - p3
+      - p4
+    shared_cpu: 40
+routing_restrictions:
+  routing_r1:
+    domain: D1
+    paths:
+      - p1
+      - p2
+    shared_bottleneck: 40
+  routing_r2:
+    domain: D2
+    paths:
+      - p3
+      - p4
+    shared_bottleneck: 40

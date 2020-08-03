@@ -1,0 +1,169 @@
+domain_nodes:
+  D1:
+    - v1
+    - v2
+    - v3
+    - v4
+  D2:
+    - v5
+    - v6
+    - v7
+    - v9
+  D3:
+    - v10
+    - v11
+    - v13
+    - v15
+inter_domain_edges:
+  e1:
+    src: v3
+    dst: v11
+    max_rate: 10
+    delay: 5
+  e2:
+    src: v4
+    dst: v5
+    max_rate: 20
+    delay: 5
+  e3:
+    src: v5
+    dst: v10
+    max_rate: 20
+    delay: 5
+  e4:
+    src: v9
+    dst: v10
+    max_rate: 30
+    delay: 5
+  e5:
+    src: v7
+    dst: v15
+    max_rate: 20
+    delay: 5
+intra_domain_paths:
+  p1:
+    domain: D3
+    max_rate: 10
+    delay: 5
+    cpu: 15
+    src: v11
+    dst: v10
+  p4:
+    domain: D3
+    max_rate: 20
+    delay: 10
+    cpu: 18
+    src: v13
+    dst: v15
+  p5:
+    domain: D3
+    max_rate: 9
+    delay: 15
+    cpu: 30
+    src: v13
+    dst: v11
+  p7:
+    domain: D1
+    max_rate: 4
+    delay: 5
+    cpu: 15
+    src: v3
+    dst: v4
+  p11:
+    domain: D1
+    max_rate: 2
+    delay: 5
+    cpu: 25
+    src: v1
+    dst: v4
+  p12:
+    domain: D1
+    max_rate: 2
+    delay: 10
+    cpu: 32
+    src: v1
+    dst: v4
+  p21:
+    domain: D1
+    max_rate: 4
+    delay: 10
+    cpu: 35
+    src: v1
+    dst: v4
+  p13:
+    domain: D1
+    max_rate: 4
+    delay: 5
+    cpu: 27
+    src: v1
+    dst: v2
+  p14:
+    domain: D1
+    max_rate: 2
+    delay: 15
+    cpu: 42
+    src: v1
+    dst: v2
+  p15:
+    domain: D1
+    max_rate: 2
+    delay: 10
+    cpu: 32
+    src: v1
+    dst: v2
+  p19:
+    domain: D1
+    max_rate: 2
+    delay: 10
+    cpu: 32
+    src: v2
+    dst: v3
+  p20:
+    domain: D1
+    max_rate: 2
+    delay: 10
+    cpu: 22
+    src: v2
+    dst: v3
+  p22:
+    domain: D2
+    max_rate: 20
+    delay: 5
+    cpu: 20
+    src: v5
+    dst: v9
+  p23:
+    domain: D2
+    max_rate: 5
+    delay: 15
+    cpu: 59
+    src: v5
+    dst: v9
+  p24:
+    domain: D2
+    max_rate: 10
+    delay: 10
+    cpu: 59
+    src: v6
+    dst: v7
+  p25:
+    domain: D2
+    max_rate: 5
+    delay: 20
+    cpu: 69
+    src: v6
+    dst: v7
+  p26:
+    domain: D2
+    max_rate: 5
+    delay: 5
+    cpu: 19
+    src: v6
+    dst: v5
+  p27:
+    domain: D2
+    max_rate: 10
+    delay: 15
+    cpu: 59
+    src: v6
+    dst: v5

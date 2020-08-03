@@ -1,0 +1,8 @@
+request1:
+  egress: N11
+  egress_domain: childCoordinator1
+  ingress: N5
+  ingress_domain: childCoordinator3
+  initial_rate: 10
+  vnf_chain: chain1
+

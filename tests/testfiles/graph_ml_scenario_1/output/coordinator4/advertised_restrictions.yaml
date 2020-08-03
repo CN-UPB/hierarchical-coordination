@@ -1,0 +1,166 @@
+cpu_restrictions:
+  cpu_restriction_coordinator0_0:
+    domain: coordinator0
+    paths:
+    - path_4
+    - path_0
+    - path_3
+    - path_2
+    - path_5
+    - path_1
+    shared_cpu: 21
+  cpu_restriction_coordinator1_0:
+    domain: coordinator1
+    paths:
+    - path_7
+    - path_17
+    - path_9
+    - path_6
+    - path_19
+    - path_16
+    - path_8
+    - path_18
+    shared_cpu: 10
+  cpu_restriction_coordinator1_1:
+    domain: coordinator1
+    paths:
+    - path_15
+    - path_20
+    - path_7
+    - path_21
+    - path_17
+    - path_9
+    - path_6
+    - path_19
+    - path_14
+    - path_16
+    - path_8
+    - path_18
+    shared_cpu: 16
+  cpu_restriction_coordinator1_2:
+    domain: coordinator1
+    paths:
+    - path_12
+    - path_15
+    - path_20
+    - path_7
+    - path_21
+    - path_17
+    - path_9
+    - path_13
+    - path_6
+    - path_14
+    - path_16
+    - path_8
+    shared_cpu: 9
+  cpu_restriction_coordinator1_3:
+    domain: coordinator1
+    paths:
+    - path_12
+    - path_10
+    - path_15
+    - path_7
+    - path_9
+    - path_13
+    - path_6
+    - path_11
+    - path_14
+    - path_8
+    shared_cpu: 5
+  cpu_restriction_coordinator1_4:
+    domain: coordinator1
+    paths:
+    - path_12
+    - path_10
+    - path_20
+    - path_21
+    - path_17
+    - path_13
+    - path_11
+    - path_16
+    shared_cpu: 14
+  cpu_restriction_coordinator3_0:
+    domain: coordinator3
+    paths:
+    - path_29
+    - path_28
+    shared_cpu: 31
+routing_restrictions:
+  routing_restriction_coordinator0_0:
+    domain: coordinator0
+    paths:
+    - path_4
+    - path_0
+    - path_2
+    shared_bottleneck: 10
+  routing_restriction_coordinator0_1:
+    domain: coordinator0
+    paths:
+    - path_5
+    - path_1
+    - path_3
+    shared_bottleneck: 10
+  routing_restriction_coordinator1_0:
+    domain: coordinator1
+    paths:
+    - path_6
+    - path_16
+    - path_9
+    - path_18
+    shared_bottleneck: 5
+  routing_restriction_coordinator1_1:
+    domain: coordinator1
+    paths:
+    - path_17
+    - path_19
+    - path_8
+    - path_7
+    shared_bottleneck: 5
+  routing_restriction_coordinator1_2:
+    domain: coordinator1
+    paths:
+    - path_15
+    - path_21
+    - path_9
+    - path_6
+    - path_16
+    shared_bottleneck: 12
+  routing_restriction_coordinator1_3:
+    domain: coordinator1
+    paths:
+    - path_20
+    - path_7
+    - path_17
+    - path_14
+    - path_8
+    shared_bottleneck: 12
+  routing_restriction_coordinator1_4:
+    domain: coordinator1
+    paths:
+    - path_13
+    - path_6
+    - path_9
+    - path_15
+    shared_bottleneck: 12
+  routing_restriction_coordinator1_5:
+    domain: coordinator1
+    paths:
+    - path_14
+    - path_12
+    - path_8
+    - path_7
+    shared_bottleneck: 12
+  routing_restriction_coordinator1_6:
+    domain: coordinator1
+    paths:
+    - path_21
+    - path_16
+    - path_12
+    shared_bottleneck: 16
+  routing_restriction_coordinator1_7:
+    domain: coordinator1
+    paths:
+    - path_13
+    - path_17
+    - path_20
+    shared_bottleneck: 16

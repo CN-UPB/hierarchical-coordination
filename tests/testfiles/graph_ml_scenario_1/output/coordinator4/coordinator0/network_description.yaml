@@ -1,0 +1,74 @@
+domain_nodes:
+  N4:
+  - N4
+  - N4-temp
+  N5:
+  - N5
+  - N5-temp
+  N6:
+  - N6
+  - N6-temp
+inter_domain_edges:
+  edge_16:
+    delay: 2
+    dst: N5
+    max_rate: 11
+    src: N4
+  edge_17:
+    delay: 2
+    dst: N4
+    max_rate: 11
+    src: N5
+  edge_18:
+    delay: 9
+    dst: N6
+    max_rate: 10
+    src: N4
+  edge_19:
+    delay: 9
+    dst: N4
+    max_rate: 10
+    src: N6
+intra_domain_paths:
+  pathN4-temp:
+    cpu: 3
+    delay: 0
+    domain: N4
+    dst: N4-temp
+    max_rate: 1000000
+    src: N4
+  pathN4-temp-bw:
+    cpu: 0
+    delay: 0
+    domain: N4
+    dst: N4
+    max_rate: 1000000
+    src: N4-temp
+  pathN5-temp:
+    cpu: 4
+    delay: 0
+    domain: N5
+    dst: N5-temp
+    max_rate: 1000000
+    src: N5
+  pathN5-temp-bw:
+    cpu: 0
+    delay: 0
+    domain: N5
+    dst: N5
+    max_rate: 1000000
+    src: N5-temp
+  pathN6-temp:
+    cpu: 14
+    delay: 0
+    domain: N6
+    dst: N6-temp
+    max_rate: 1000000
+    src: N6
+  pathN6-temp-bw:
+    cpu: 0
+    delay: 0
+    domain: N6
+    dst: N6
+    max_rate: 1000000
+    src: N6-temp

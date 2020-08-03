@@ -1,0 +1,14 @@
+request1-request0:
+  egress: N2
+  egress_domain: N2
+  ingress: N5
+  ingress_domain: N5
+  initial_rate: 5.897435897435898
+  vnf_chain: chain_0
+request1-request1:
+  egress: N2
+  egress_domain: N2
+  ingress: N5
+  ingress_domain: N5
+  initial_rate: 4.102564102564102
+  vnf_chain: chain_0

@@ -1,0 +1,15 @@
+cpu_consumption:
+  A: 'lambda in_rate: 0.5 * in_rate'
+  B: 'lambda in_rate: 0.3 * in_rate'
+  DST: 'lambda in_rate: 0'
+  SRC: 'lambda in_rate: 0'
+outgoing_rate:
+  A: 'lambda in_rate: 1.5 * in_rate'
+  B: 'lambda in_rate: 1.3 * in_rate'
+  DST: 'lambda in_rate: in_rate'
+  SRC: 'lambda in_rate: in_rate'
+vnfs:
+- SRC
+- A
+- B
+- DST

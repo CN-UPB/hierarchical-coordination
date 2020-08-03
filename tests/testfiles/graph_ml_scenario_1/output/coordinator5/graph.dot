@@ -1,0 +1,24 @@
+digraph  {
+N11;
+"N11-temp";
+egress_N11;
+N13;
+"N13-temp";
+ingress_N13;
+N14;
+"N14-temp";
+N11 -> "N11-temp"  [key=0, label="pathN11-temp"];
+N11 -> egress_N11  [key=0, label=egress_N11];
+N11 -> N13  [key=0, label=edge_38];
+N11 -> N14  [key=0, label=edge_40];
+"N11-temp" -> N11  [key=0, label="pathN11-temp-bw"];
+N13 -> "N13-temp"  [key=0, label="pathN13-temp"];
+N13 -> N11  [key=0, label=edge_39];
+N13 -> N14  [key=0, label=edge_42];
+"N13-temp" -> N13  [key=0, label="pathN13-temp-bw"];
+ingress_N13 -> N13  [key=0, label=ingress_N13];
+N14 -> "N14-temp"  [key=0, label="pathN14-temp"];
+N14 -> N11  [key=0, label=edge_41];
+N14 -> N13  [key=0, label=edge_43];
+"N14-temp" -> N14  [key=0, label="pathN14-temp-bw"];
+}

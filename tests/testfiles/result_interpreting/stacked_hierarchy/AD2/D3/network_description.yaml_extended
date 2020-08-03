@@ -1,0 +1,88 @@
+domain_nodes:
+  v10:
+  - v10
+  - v10-temp
+  v11:
+  - v11
+  - v11-temp
+  v12:
+  - v12
+  - v12-temp
+  v13:
+  - v13
+  - v13-temp
+  v14:
+  - v14
+  - v14-temp
+  v15:
+  - v15
+  - v15-temp
+inter_domain_edges:
+  d3e1:
+    delay: 5
+    dst: v11
+    max_rate: 10
+    src: v10
+  d3e2:
+    delay: 5
+    dst: v12
+    max_rate: 15
+    src: v11
+  d3e3:
+    delay: 5
+    dst: v14
+    max_rate: 9
+    src: v12
+  d3e4:
+    delay: 5
+    dst: v15
+    max_rate: 20
+    src: v14
+  d3e5:
+    delay: 5
+    dst: v13
+    max_rate: 20
+    src: v14
+intra_domain_paths:
+  pathv10-temp:
+    cpu: 15
+    delay: 0
+    domain: v10
+    dst: v10-temp
+    max_rate: 1000000
+    src: v10
+  pathv11-temp:
+    cpu: 5
+    delay: 0
+    domain: v11
+    dst: v11-temp
+    max_rate: 1000000
+    src: v11
+  pathv12-temp:
+    cpu: 10
+    delay: 0
+    domain: v12
+    dst: v12-temp
+    max_rate: 1000000
+    src: v12
+  pathv13-temp:
+    cpu: 0
+    delay: 0
+    domain: v13
+    dst: v13-temp
+    max_rate: 1000000
+    src: v13
+  pathv14-temp:
+    cpu: 15
+    delay: 0
+    domain: v14
+    dst: v14-temp
+    max_rate: 1000000
+    src: v14
+  pathv15-temp:
+    cpu: 3
+    delay: 0
+    domain: v15
+    dst: v15-temp
+    max_rate: 1000000
+    src: v15

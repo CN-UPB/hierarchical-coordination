@@ -1,0 +1,15 @@
+childCoordinator1:
+  request1-request0: !!python/tuple
+  - A
+  - DST
+  request1-request1: !!python/tuple
+  - A
+  - DST
+childCoordinator2: {}
+childCoordinator3:
+  request1-request0: !!python/tuple
+  - SRC
+  - B
+  request1-request1: !!python/tuple
+  - SRC
+  - B

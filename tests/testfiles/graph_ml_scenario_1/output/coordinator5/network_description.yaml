@@ -1,0 +1,84 @@
+domain_nodes:
+  N11:
+  - N11
+  - N11-temp
+  N13:
+  - N13
+  - N13-temp
+  N14:
+  - N14
+  - N14-temp
+inter_domain_edges:
+  edge_38:
+    delay: 9
+    dst: N13
+    max_rate: 13
+    src: N11
+  edge_39:
+    delay: 9
+    dst: N11
+    max_rate: 13
+    src: N13
+  edge_40:
+    delay: 7
+    dst: N14
+    max_rate: 6
+    src: N11
+  edge_41:
+    delay: 7
+    dst: N11
+    max_rate: 6
+    src: N14
+  edge_42:
+    delay: 4
+    dst: N14
+    max_rate: 17
+    src: N13
+  edge_43:
+    delay: 4
+    dst: N13
+    max_rate: 17
+    src: N14
+intra_domain_paths:
+  pathN11-temp:
+    cpu: 3
+    delay: 0
+    domain: N11
+    dst: N11-temp
+    max_rate: 1000000
+    src: N11
+  pathN11-temp-bw:
+    cpu: 0
+    delay: 0
+    domain: N11
+    dst: N11
+    max_rate: 1000000
+    src: N11-temp
+  pathN13-temp:
+    cpu: 6
+    delay: 0
+    domain: N13
+    dst: N13-temp
+    max_rate: 1000000
+    src: N13
+  pathN13-temp-bw:
+    cpu: 0
+    delay: 0
+    domain: N13
+    dst: N13
+    max_rate: 1000000
+    src: N13-temp
+  pathN14-temp:
+    cpu: 6
+    delay: 0
+    domain: N14
+    dst: N14-temp
+    max_rate: 1000000
+    src: N14
+  pathN14-temp-bw:
+    cpu: 0
+    delay: 0
+    domain: N14
+    dst: N14
+    max_rate: 1000000
+    src: N14-temp
