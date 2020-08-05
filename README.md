@@ -1,12 +1,16 @@
 # Hierarchical Network and Service Coordination
 
-An approach for hierarchical network and service coordination. Combines the best of two worlds: High solution quality, typically known from centralized approaches, and fast execution, known from distributed approaches. By splitting the network into hierarchies and domains, coordination can be parallelized but is still coordinated between domains.
+An approach for hierarchical network and service coordination. Combines the best of two worlds: High solution quality, typically known from centralized approaches, and fast execution, known from distributed approaches. By splitting the network into hierarchies and domains, information is aggregated and advertised to hierarchies bottom-up and coordination performed top-down. In doing so, different domains can be coordinated in parallel but are still guided by a common parent coordinator.
 
-This repository contains the MILP implementation using Gurobi as well as auxiliary tools.
+This repository contains all code for this hierarchical approach, including the implementation of an MILP formulation that allows optimal coordination within each domain.
 
 ## Setup
 
-Requires Python 3.6+ and Gurobi. Dependencies can be installed with
+Requires Python 3.6+ and Gurobi. 
+
+First, install `gurobipy` according to the [documentation](https://www.gurobi.com/documentation/9.0/quickstart_mac/the_grb_python_interface_f.html).
+
+Then, install all remaining dependencies with
 
 ```python
 python setup.py install
