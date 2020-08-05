@@ -1,12 +1,11 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="Hierarchical-vnf-coordination",
-    version="0.1dev",
+    name="hierarchical-coordination",
+    version="1.0",
     packages=find_packages('src', 'tests'),
-    license='Apache 2.0',
-    description='HVC enables hierarchical coordination to VNF placement, scaling and routing',
-    # url='https://github.com/CN-UPB/B-JointSP',
+    description='Hierarchical network and service coordination',
+    url='https://github.com/CN-UPB/hierarchical-coordination',
     author='Mirko Juergens',
     author_email='mirkoj@mail.upb.de',
     package_dir={'': 'src'},
