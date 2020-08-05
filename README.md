@@ -1,6 +1,6 @@
 # Hierarchical Network and Service Coordination
 
-An approach for hierarchical network and service coordination. Combines the best of two worlds: High solution quality, typically known from centralized approaches, and fast execution, known from distributed approaches. By splitting the network into hierarchies and domains, information is aggregated and advertised to hierarchies bottom-up and coordination performed top-down. In doing so, different domains can be coordinated in parallel but are still guided by a common parent coordinator.
+An approach for hierarchical network and service coordination, including scaling and placement of services consisting of chained components (e.g., VNFs  or microservices) as well as traffic routing. Combines the best of two worlds: High solution quality, typically known from centralized approaches, and fast execution, known from distributed approaches. By splitting the network into hierarchies and domains, information is aggregated and advertised to hierarchies bottom-up and coordination performed top-down. In doing so, different domains can be coordinated in parallel but are still guided by a common parent coordinator.
 
 This repository contains all code for this hierarchical approach, including the implementation of an MILP formulation that allows optimal coordination within each domain.
 
