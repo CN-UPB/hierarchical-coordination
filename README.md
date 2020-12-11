@@ -4,6 +4,21 @@ An approach for hierarchical network and service coordination, including scaling
 
 This repository contains all code for this hierarchical approach, including the implementation of an MILP formulation that allows optimal coordination within each domain.
 
+## Citation
+
+If you use this code, please cite our [paper](https://ris.uni-paderborn.de/download/20693/20694/preprint_with_header.pdf):
+
+```
+@inproceedings{schneider2021divide,
+	title={Divide and Conquer: Hierarchical Network and Service Coordination},
+	author={Schneider, Stefan and J{\"u}rgens, Mirko and Karl, Holger},
+	booktitle={IFIP/IEEE International Symposium on Integrated Network Management (IM)},
+	year={2021},
+	organization={IFIP/IEEE},
+	note={to appear}
+}
+```
+
 ## Setup
 
 Requires Python 3.6+ and Gurobi. 
