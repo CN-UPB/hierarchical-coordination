@@ -14,8 +14,7 @@ If you use this code, please cite our [paper](https://ris.uni-paderborn.de/downl
 	author={Schneider, Stefan and J{\"u}rgens, Mirko and Karl, Holger},
 	booktitle={IFIP/IEEE International Symposium on Integrated Network Management (IM)},
 	year={2021},
-	organization={IFIP/IEEE},
-	note={to appear}
+	organization={IFIP/IEEE}
 }
 ```
 
